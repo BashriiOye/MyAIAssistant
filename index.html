@@ -38,12 +38,10 @@
             const text = input.value.trim();
             if (text === "") return;
             
-            // Add user message
             chat.innerHTML += `<div class="msg user">${text}</div>`;
             input.value = "";
             chat.scrollTop = chat.scrollHeight;
             
-            // Simulate AI thinking
             setTimeout(() => {
                 chat.innerHTML += `<div class="msg ai">I heard you say: "${text}". (AI connection coming soon!)</div>`;
                 chat.scrollTop = chat.scrollHeight;
